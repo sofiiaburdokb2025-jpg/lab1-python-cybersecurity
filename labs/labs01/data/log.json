@@ -1,0 +1,50 @@
+[
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-13 17:23:36",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "security_user",
+        "result": "failure",
+        "timestamp": "2026-09-13 17:23:36",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-09-13 17:23:36",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-13 17:32:42",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "security_user",
+        "result": "failure",
+        "timestamp": "2026-09-13 17:32:42",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-09-13 17:32:42",
+        "args": [],
+        "kwargs": {}
+    }
+]
