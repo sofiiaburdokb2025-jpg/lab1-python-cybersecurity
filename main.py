@@ -1,16 +1,20 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f"Hi, {name}")  # Press ⌘F8 to toggle the breakpoint.
+from labs.labs01.task1 import main as task1_main
+from labs.labs01.task2 import main as task2_main
+from labs.labs01.task3 import main as task3_main
 
 
-# Press the green button in the gutter to run the script.
+def main():
+    print("Лабораторна робота №1")
+
+    print("\nЗавдання 1")
+    task1_main()
+
+    print("\nЗавдання 2")
+    task2_main()
+
+    print("\nЗавдання 3")
+    task3_main()
+
+
 if __name__ == "__main__":
-    print_hi("PyCharm")
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    main()

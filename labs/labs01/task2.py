@@ -4,10 +4,6 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
 
 from shared.student import STUDENT_NAME, GROUP_NAME, VARIANT_NUMBER
-print(f"Студент: {STUDENT_NAME}")
-print(f"Група: {GROUP_NAME}")
-print(f"Варіант: {VARIANT_NUMBER}")
-
 
 users = {
     "security_chief": {
@@ -72,12 +68,17 @@ blocked_users = {
 }
 
 
-print("Список ресурсів")
-print()
+def main():
+    print(f"Студент: {STUDENT_NAME}")
+    print(f"Група: {GROUP_NAME}")
+    print(f"Варіант: {VARIANT_NUMBER}")
 
-for resource_name, security_level in resources:
-    level_name = security_levels[security_level - 1]
-    print(f"{resource_name:<25} {level_name}")
+    print("Список ресурсів")
+    print()
+
+    for resource_name, security_level in resources:
+        level_name = security_levels[security_level - 1]
+        print(f"{resource_name:<25} {level_name}")
 
 
 def check_access(username, resource_level):
@@ -98,13 +99,29 @@ def check_access(username, resource_level):
     return "DENY (Insufficient clearance)"
 
 
-print("\nРезультати перевірки")
-print()
+def main():
+    print(f"Студент: {STUDENT_NAME}")
+    print(f"Група: {GROUP_NAME}")
+    print(f"Варіант: {VARIANT_NUMBER}")
 
-for username in users:
-    for resource_name, resource_level in resources:
-        result = check_access(username, resource_level)
-        print(
-            f"user={username:<15} "
-            f"resource={resource_name:<25} -> {result}"
-        )
+    print("Список ресурсів")
+    print()
+
+    for resource_name, security_level in resources:
+        level_name = security_levels[security_level - 1]
+        print(f"{resource_name:<25} {level_name}")
+
+    print("\nРезультати перевірки")
+    print()
+
+    for username in users:
+        for resource_name, resource_level in resources:
+            result = check_access(username, resource_level)
+            print(
+                f"user={username:<15} "
+                f"resource={resource_name:<25} -> {result}"
+            )
+
+
+if __name__ == "__main__":
+    main()

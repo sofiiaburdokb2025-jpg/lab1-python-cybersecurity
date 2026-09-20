@@ -46,5 +46,461 @@
         "timestamp": "2026-09-13 17:32:42",
         "args": [],
         "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-13 17:58:30",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "security_user",
+        "result": "failure",
+        "timestamp": "2026-09-13 17:58:30",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-09-13 17:58:30",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-13 18:02:03",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "security_user",
+        "result": "failure",
+        "timestamp": "2026-09-13 18:02:03",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-09-13 18:02:03",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-13 18:02:56",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "security_user",
+        "result": "failure",
+        "timestamp": "2026-09-13 18:02:56",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-09-13 18:02:56",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-14 08:28:10",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "security_user",
+        "result": "failure",
+        "timestamp": "2026-09-14 08:28:10",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-09-14 08:28:10",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-14 08:45:51",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "security_user",
+        "result": "failure",
+        "timestamp": "2026-09-14 08:45:51",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-09-14 08:45:51",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-14 09:06:40",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "security_user",
+        "result": "failure",
+        "timestamp": "2026-09-14 09:06:40",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-09-14 09:06:40",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-14 09:11:09",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "security_user",
+        "result": "failure",
+        "timestamp": "2026-09-14 09:11:09",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-09-14 09:11:09",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-14 09:11:14",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "security_user",
+        "result": "failure",
+        "timestamp": "2026-09-14 09:11:14",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-09-14 09:11:14",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-14 09:12:45",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "security_user",
+        "result": "failure",
+        "timestamp": "2026-09-14 09:12:45",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-09-14 09:12:45",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-14 09:21:37",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "security_user",
+        "result": "failure",
+        "timestamp": "2026-09-14 09:21:37",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-09-14 09:21:37",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-14 09:32:12",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "security_user",
+        "result": "failure",
+        "timestamp": "2026-09-14 09:32:12",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-09-14 09:32:12",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-20 22:16:12",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "security_user",
+        "result": "failure",
+        "timestamp": "2026-09-20 22:16:12",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-09-20 22:16:12",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-20 22:16:47",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "security_user",
+        "result": "failure",
+        "timestamp": "2026-09-20 22:16:47",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-09-20 22:16:47",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-20 22:21:48",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "security_user",
+        "result": "failure",
+        "timestamp": "2026-09-20 22:21:48",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-09-20 22:21:48",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-20 22:21:50",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "security_user",
+        "result": "failure",
+        "timestamp": "2026-09-20 22:21:50",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-09-20 22:21:50",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-20 22:33:46",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "security_user",
+        "result": "failure",
+        "timestamp": "2026-09-20 22:33:46",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-09-20 22:33:46",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-20 22:34:59",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "security_user",
+        "result": "failure",
+        "timestamp": "2026-09-20 22:34:59",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-09-20 22:34:59",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-20 22:37:46",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "security_user",
+        "result": "failure",
+        "timestamp": "2026-09-20 22:37:46",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-09-20 22:37:46",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-20 22:39:10",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "security_user",
+        "result": "failure",
+        "timestamp": "2026-09-20 22:39:10",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-09-20 22:39:10",
+        "args": [],
+        "kwargs": {}
     }
 ]

@@ -87,7 +87,7 @@ def read_users():
 
 
 def print_users_table(users_db):
-    print("\nБАЗА КОРИСТУВАЧІВ")
+    print("\nБаза користувачів")
     print("-" * 75)
     print(f"{'Логін':<20} {'SHA-1 хеш':<45}")
     print("-" * 75)
@@ -168,7 +168,7 @@ def main():
 
         print_users_table(users_db)
 
-        print("\nПЕРЕВІРКА ВХОДУ")
+        print("\nПеревірка входу")
         print("-" * 50)
 
         test_logins = [
