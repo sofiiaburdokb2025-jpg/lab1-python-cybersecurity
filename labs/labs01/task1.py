@@ -1,10 +1,10 @@
-import sys
 import os
 import random
+import sys
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
 
-from shared.student import STUDENT_NAME, GROUP_NAME, VARIANT_NUMBER
+from shared.student import GROUP_NAME, STUDENT_NAME, VARIANT_NUMBER
 
 
 def main():
@@ -71,7 +71,6 @@ def main():
     for password in passwords:
         result = analyze_password(password)
         print(f"{password:<20} {result:<20}")
-
 
 if __name__ == "__main__":
     main()

@@ -1,15 +1,14 @@
-import sys
-import os
 import csv
 import hashlib
 import json
-from datetime import datetime
+import os
+import sys
+from datetime import datetime, timezone
 from functools import wraps
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
 
 from shared.student import VARIANT_NUMBER
-
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 USERS_FILE = os.path.join(DATA_DIR, "users.csv")
@@ -36,7 +35,6 @@ def generate_hash(password: str, salt: str = "00000") -> str:
         )
 
     data = password + salt
-
     hash_object = hashlib.sha1(data.encode("utf-8"))
 
     return hash_object.hexdigest()
@@ -88,9 +86,7 @@ def read_users():
 
 def print_users_table(users_db):
     print("\nБаза користувачів")
-    print("-" * 75)
     print(f"{'Логін':<20} {'SHA-1 хеш':<45}")
-    print("-" * 75)
 
     for username, password_hash in users_db:
         print(f"{username:<20} {password_hash:<45}")
@@ -114,20 +110,17 @@ def log_event(function):
                 "event": "login",
                 "user": username,
                 "result": result,
-                "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "timestamp": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
                 "args": [],
                 "kwargs": {}
             }
 
             os.makedirs(DATA_DIR, exist_ok=True)
 
-            try:
-                if os.path.exists(LOG_FILE):
-                    with open(LOG_FILE, "r", encoding="utf-8") as file:
-                        logs = json.load(file)
-                else:
-                    logs = []
-            except (FileNotFoundError, json.JSONDecodeError):
+            if os.path.exists(LOG_FILE):
+                with open(LOG_FILE, "r", encoding="utf-8") as file:
+                    logs = json.load(file)
+            else:
                 logs = []
 
             logs.append(log_data)
@@ -151,58 +144,37 @@ def login(username: str, password: str) -> bool:
     for saved_username, saved_hash in users_db:
         if saved_username == username:
             entered_hash = generate_hash(password, PERSONAL_SALT)
-
-            if entered_hash == saved_hash:
-                return True
-
-            return False
+            return entered_hash == saved_hash
 
     return False
 
 
 def main():
-    try:
-        create_users(users_to_register)
+    create_users(users_to_register)
 
-        users_db = read_users()
+    users_db = read_users()
 
-        print_users_table(users_db)
+    print_users_table(users_db)
 
-        print("\nПеревірка входу")
-        print("-" * 50)
+    print("\nПеревірка входу")
 
-        test_logins = [
-            ("admin", "AdminPass1!"),
-            ("security_user", "WrongPassword"),
-            ("unknown_user", "SomePassword1!")
-        ]
+    test_logins = [
+        ("admin", "AdminPass1!"),
+        ("security_user", "WrongPassword"),
+        ("unknown_user", "SomePassword1!")
+    ]
 
-        for username, password in test_logins:
-            try:
-                result = login(username, password)
+    for username, password in test_logins:
+        try:
+            result = login(username, password)
 
-                if result:
-                    print(f"{username}: Успішний вхід")
-                else:
-                    print(f"{username}: Невдалий вхід")
+            if result:
+                print(f"{username}: Успішний вхід")
+            else:
+                print(f"{username}: Невдалий вхід")
 
-            except (ValidationError, ValueError) as error:
-                print(f"{username}: Помилка — {error}")
-
-    except FileNotFoundError as error:
-        print(f"Помилка: файл не знайдено — {error}")
-
-    except PermissionError as error:
-        print(f"Помилка: немає дозволу — {error}")
-
-    except IOError as error:
-        print(f"Помилка введення/виведення — {error}")
-
-    except ValidationError as error:
-        print(f"Помилка валідації — {error}")
-
-    except ValueError as error:
-        print(f"Помилка значення — {error}")
+        except (ValidationError, ValueError) as error:
+            print(f"{username}: Помилка — {error}")
 
 
 if __name__ == "__main__":

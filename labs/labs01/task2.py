@@ -1,9 +1,9 @@
-import sys
 import os
+import sys
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
 
-from shared.student import STUDENT_NAME, GROUP_NAME, VARIANT_NUMBER
+from shared.student import GROUP_NAME, STUDENT_NAME, VARIANT_NUMBER
 
 users = {
     "security_chief": {
@@ -67,16 +67,7 @@ blocked_users = {
     "compromised_acc"
 }
 
-
-def main():
-    print(f"Студент: {STUDENT_NAME}")
-    print(f"Група: {GROUP_NAME}")
-    print(f"Варіант: {VARIANT_NUMBER}")
-
-    print("Список ресурсів")
-    print()
-
-    for resource_name, security_level in resources:
+for resource_name, security_level in resources:
         level_name = security_levels[security_level - 1]
         print(f"{resource_name:<25} {level_name}")
 
