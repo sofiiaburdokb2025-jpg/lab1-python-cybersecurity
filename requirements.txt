@@ -1,1 +1,6 @@
-ruff
+fastapi
+uvicorn
+pydantic
+requests==2.34.2
+pytest==9.2.0
+ruff==0.16.7
